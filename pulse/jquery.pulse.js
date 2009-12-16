@@ -7,6 +7,8 @@
  * ---
  * Note: In order to animate color properties, you need
  * the color plugin from here: http://plugins.jquery.com/project/color
+ * ---
+ * @info http://james.padolsey.com/javascript/simple-pulse-plugin-for-jquery/
  */
 
 jQuery.fn.pulse = function( prop, speed, times, easing, callback ) {
