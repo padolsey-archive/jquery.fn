@@ -30,10 +30,16 @@ jQuery.macro = (function(){
 		
         jQuery.fn[name] = function() {
             
-            var m, i = 0;
-            
+            var m, i = 0, prev = this, cur = this;
+			
             while (m = recorded[i++]) {
-                self.ret = this[m.name].apply(this, m.args);
+                cur = this[m.name].apply(prev, m.args);
+				// Returned collection must be instanceof jQuery
+				// since it will be the context for the next call
+				if ( !(cur instanceof jQuery) ) {
+					cur = prev;
+				}
+				prev = cur;
             }
             
             return this;
