@@ -7,7 +7,9 @@ This repo will eventually contain a number of useful jQuery plugins. I'll normal
 Plugins so far:
 
  * [Pulse][2]
+ * [Macro][3]
  
  
 [1]: http://james.padolsey.com
 [2]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/pulse/
+[3]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/macro/
