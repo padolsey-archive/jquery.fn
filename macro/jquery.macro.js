@@ -42,7 +42,7 @@ jQuery.macro = (function(){
                 prev = cur;
             }
             
-            return this;
+            return cur;
             
         };
         
