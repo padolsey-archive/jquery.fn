@@ -1,7 +1,7 @@
-`jQuery.macro`
+jQuery.macro
 ---
 
-*`jQuery.macro` aims to lower the barrier to extending jQuery’s API -- to rid your global namespace of misplaced functions -- to spare you the superflous function notation when creating a plugin that only calls a bunch of jQuery methods.*
+*`jQuery.macro` aims to lower the barrier to extending jQuery's API -- to rid your global namespace of misplaced functions -- to spare you the superfluous function notation when creating a plugin that only calls a bunch of jQuery methods.*
 
 More info: http://james.padolsey.com/javascript/macros-in-jquery/
 
