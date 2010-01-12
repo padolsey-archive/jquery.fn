@@ -11,6 +11,16 @@ Plugins so far:
  * [Cross domain Ajax][4]
  
  
+###Licenses
+
+Unless otherwise specified within any of the plugins, you can assume the following license:
+
+    * Copyright (c) 2009 James Padolsey
+    * -------------------------------------------------------
+    * Dual licensed under the MIT and GPL licenses.
+    *    - http://www.opensource.org/licenses/mit-license.php
+    *    - http://www.gnu.org/copyleft/gpl.html
+ 
 [1]: http://james.padolsey.com
 [2]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/pulse/
 [3]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/macro/
