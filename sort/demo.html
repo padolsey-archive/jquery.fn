@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Sort plugin for jQuery</title>
+    </head>
+    <body>
+        
+        <h1>Demo</h1>
+        
+        <p>Click on the headers (fruit/quantity).</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grape</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Melon</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td>36</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="jquery.sort.js"></script>
+        <script>
+            var th = jQuery('th'),
+                inverse = false;
+            
+            th.click(function(){
+                
+                var header = $(this),
+                    index = header.index();
+                    
+                header
+                    .closest('table')
+                    .find('td')
+                    .filter(function(){
+                        return $(this).index() === index;
+                    })
+                    .sort(function(a, b){
+                        
+                        a = $(a).text();
+                        b = $(b).text();
+                        
+                        return (
+                            isNaN(a) || isNaN(b) ?
+                                a > b : +a > +b
+                            ) ?
+                                inverse ? -1 : 1 :
+                                inverse ? 1 : -1;
+                            
+                    }, function(){
+                        return this.parentNode;
+                    });
+                
+                inverse = !inverse;
+                
+            });
+        </script>
+        
+    </body>
+</html>
