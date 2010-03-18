@@ -45,10 +45,21 @@
             </tbody>
         </table>
         
+        <button>Click to sort the list below</button>
+        
+        <ul>
+            <li>Lamborghini</li>
+            <li>Farrari</li>
+            <li>Masarati</li>
+            <li>Aston Martin</li>
+            <li>Porche</li>
+        </ul>
+        
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script src="jquery.sort.js"></script>
         <script>
             var th = jQuery('th'),
+                li = jQuery('li'),
                 inverse = false;
             
             th.click(function(){
@@ -80,6 +91,12 @@
                 
                 inverse = !inverse;
                 
+            });
+            
+            $('button').click(function(){
+                li.sort(function(a, b){
+                    return $(a).text() > $(b).text() ? 1 : -1;
+                });
             });
         </script>
         

@@ -9,6 +9,7 @@ Plugins so far:
  * [Pulse][2]
  * [Macro][3]
  * [Cross domain Ajax][4]
+ * [Sort][5]
  
  
 ###Licenses
@@ -25,3 +26,4 @@ Unless otherwise specified within any of the plugins, you can assume the followi
 [2]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/pulse/
 [3]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/macro/
 [4]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/cross-domain-ajax/
+[5]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/sort/
