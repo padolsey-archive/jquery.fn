@@ -32,4 +32,4 @@ It also let's you specify what element will be sorted. The current collection's 
         return this.parentNode;
     });
     
-See more info here: 
+See more info here: [http://james.padolsey.com/javascript/sorting-elements-with-jquery/][http://james.padolsey.com/javascript/sorting-elements-with-jquery/]
