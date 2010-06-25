@@ -56,7 +56,7 @@
         </ul>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        <script src="jquery.sort.js"></script>
+        <script src="jquery.sortElements.js"></script>
         <script>
             var th = jQuery('th'),
                 li = jQuery('li'),
@@ -73,7 +73,7 @@
                     .filter(function(){
                         return $(this).index() === index;
                     })
-                    .sort(function(a, b){
+                    .sortElements(function(a, b){
                         
                         a = $(a).text();
                         b = $(b).text();
@@ -94,7 +94,7 @@
             });
             
             $('button').click(function(){
-                li.sort(function(a, b){
+                li.sortElements(function(a, b){
                     return $(a).text() > $(b).text() ? 1 : -1;
                 });
             });
