@@ -23,7 +23,7 @@ It's easier just to show you:
         
     });
     
-**[See the demo](http://qd9.co.uk/project/jQuery-plugins/proximity/demo.html)!**
+**[See the demo](http://qd9.co.uk/project/jQuery-Plugins/proximity-event/demo.html)!**
 
 The second argument to `bind` is the data object and is used by the proximity event to determine your preferences. Available options include (defaults are shown):
 
