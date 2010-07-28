@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Proximity event for jQuery: Demo</title>
+            <style type="text/css">
+            body {
+                font-family: sans-serif;
+                margin: 0 auto;
+                width: 900px;
+            }
+            #demo {
+                padding: 20px;
+                font-size: 10px;
+                color: red;
+                background: #EEE;
+                border: 2px solid #CCC;
+                line-height: 50px;
+            }
+            #data {
+                font-family: monospace;
+                margin: 10px 0;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <h1>Proximity event for jQuery: Demo</h1>
+        
+        <p>As you move closer to the box below the red text will get bigger (up to 5em).</p>
+        <div id="demo">MOVE CLOSER!</div>
+        <div id="data"></div>
+        <p><a href="http://github.com/jamespadolsey/jQuery-plugins/proximity-event/">See the repo here!</a></p>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="jquery.onproximity.js"></script>
+        <script>
+        
+            var box = $('#demo'),
+                data = $('#data');
+            
+            box.bind('proximity', {max:300}, function(e, proximity, distance){
+                
+                // font-size moves between 10px and 30px
+                box.css('font-size', (proximity * 29 + 10) + 'px');
+                
+                data.text(
+                    proximity === 0 ?
+                        '[OUT OF BOUNDS]'
+                        : 'Distance from box: ' + distance.toFixed(3) + 'px, Proximity: ' + proximity.toFixed(3)
+                );
+                
+                box.css('background', proximity === 1 ? 'yellow' : '');
+                
+            });
+            
+        </script>
+        
+    </body>
+</html>
