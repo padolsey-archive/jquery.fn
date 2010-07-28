@@ -47,8 +47,8 @@ var box = $('#demo'),
 
 box.bind('proximity', {max:300}, function(e, proximity, distance){
     
-    // font-size moves between 10px and 30px
-    box.css('font-size', (proximity * 29 + 10) + 'px');
+    // font-size moves between 10px and 40px
+    box.css('font-size', (proximity * 30 + 10) + 'px');
     
     data.text(
         proximity === 0 ?
@@ -70,8 +70,8 @@ box.bind('proximity', {max:300}, function(e, proximity, distance){
             
             box.bind('proximity', {max:300}, function(e, proximity, distance){
                 
-                // font-size moves between 10px and 30px
-                box.css('font-size', (proximity * 29 + 10) + 'px');
+                // font-size moves between 10px and 40px
+                box.css('font-size', (proximity * 30 + 10) + 'px');
                 
                 data.text(
                     proximity === 0 ?
