@@ -10,6 +10,7 @@ Plugins so far:
  * [Macro][3]
  * [Cross domain Ajax][4]
  * [sortElements][5]
+ * [Proximity event][6]
  
  
 ###Licenses
@@ -27,3 +28,4 @@ Unless otherwise specified within any of the plugins, you can assume the followi
 [3]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/macro/
 [4]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/cross-domain-ajax/
 [5]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/sortElements/
+[6]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/proximity-event/
