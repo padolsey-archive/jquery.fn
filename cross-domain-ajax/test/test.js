@@ -1,9 +1,6 @@
 
 
-test('GET', function(){
-    
-    expect(1);
-    stop();
+asyncTest('GET', 1, function(){
     
     jQuery.get('http://google.com', function(res){
         ok(
@@ -13,4 +10,18 @@ test('GET', function(){
         start();
     });
     
+});
+
+asyncTest('Implicit GET', 1, function(){
+
+    jQuery.ajax({
+        url: 'http://yahoo.com',
+        success: function(res){
+            start();
+            ok(
+                !!(res && res.responseText),
+                'Implicit GET Request to Google.com succeeded!'
+            );
+        }
+    });
 });
