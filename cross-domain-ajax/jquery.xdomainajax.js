@@ -53,7 +53,7 @@ jQuery.ajax = (function(_ajax){
             o.success = (function(_success){
                 return function(data) {
                     
-                    if (_success) {
+                    if (_success && data.results.length > 0) {
                         // Fake XHR callback.
                         _success.call(this, {
                             responseText: data.results[0]
