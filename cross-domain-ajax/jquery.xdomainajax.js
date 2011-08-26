@@ -28,8 +28,15 @@ jQuery.ajax = (function(_ajax){
         
         if ( /get/i.test(o.type) && !/json/i.test(o.dataType) && isExternal(url) ) {
             
-            // Manipulate options so that JSONP-x request is made to YQL
-            
+	    	//Check if request is a XML file
+	    	if(/xml/i.test(o.dataType))
+	    	{
+	    		//Replace table html for xml in query and remove xpath in the 'where' conditions
+				query = query.replace('html','xml');
+				query = query.replace(' and xpath="*"','');
+			};
+
+            // Manipulate options so that JSONP-x request is made to YQL            
             o.url = YQL;
             o.dataType = 'json';
             
