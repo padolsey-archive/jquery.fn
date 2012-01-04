@@ -24,8 +24,8 @@ Unless otherwise specified within any of the plugins, you can assume the followi
     *    - http://www.gnu.org/copyleft/gpl.html
  
 [1]: http://james.padolsey.com
-[2]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/pulse/
-[3]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/macro/
-[4]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/cross-domain-ajax/
-[5]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/sortElements/
-[6]: http://github.com/jamespadolsey/jQuery-Plugins/tree/master/proximity-event/
+[2]: http://github.com/padolsey/jQuery-Plugins/tree/master/pulse/
+[3]: http://github.com/padolsey/jQuery-Plugins/tree/master/macro/
+[4]: http://github.com/padolsey/jQuery-Plugins/tree/master/cross-domain-ajax/
+[5]: http://github.com/padolsey/jQuery-Plugins/tree/master/sortElements/
+[6]: http://github.com/padolsey/jQuery-Plugins/tree/master/proximity-event/
