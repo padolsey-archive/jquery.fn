@@ -27,7 +27,9 @@ jQuery.ajax = (function(_ajax){
         var url = o.url;
         
         if ( /get/i.test(o.type) && !/json/i.test(o.dataType) && isExternal(url) ) {
-            
+            //If the data type is XML the query is modified
+            query = (o.dataType=="xml")?'select * from xml where url="{URL}"':query; //by default html;
+
             // Manipulate options so that JSONP-x request is made to YQL
             
             o.url = YQL;
