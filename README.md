@@ -1,10 +1,9 @@
-jQuery Plugins
+jquery,fn
 ===
-###From James Padolsey
 
-This repo will eventually contain a number of useful jQuery plugins. I'll normally release them on my site ([james.padolsey.com][1]) and then push them to Github.
+*A collection of jQuery plugins*
 
-Plugins so far:
+Containing:
 
  * [Pulse][2]
  * [Macro][3]
@@ -23,7 +22,6 @@ Unless otherwise specified within any of the plugins, you can assume the followi
     *    - http://www.opensource.org/licenses/mit-license.php
     *    - http://www.gnu.org/copyleft/gpl.html
  
-[1]: http://james.padolsey.com
 [2]: http://github.com/padolsey/jQuery-Plugins/tree/master/pulse/
 [3]: http://github.com/padolsey/jQuery-Plugins/tree/master/macro/
 [4]: http://github.com/padolsey/jQuery-Plugins/tree/master/cross-domain-ajax/
