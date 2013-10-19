@@ -31,6 +31,7 @@ jQuery.ajax = (function(_ajax){
             // Manipulate options so that JSONP-x request is made to YQL
             
             o.url = YQL;
+            var thisQuery;
             if (o.xpath) {
             	thisQuery=query.replace("{XPATH}",o.xpath);
             } else {
